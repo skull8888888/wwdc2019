@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='Introduction'/>
+        <page name='Chapter 1. Point Charges'/>
+        <page name='Chapter 2. Charged Rod'/>
+        <page name='Chapter 3. Charged Plate'/>
+        <page name='Chapter 4. Experiments'/>
+    </pages>
+</playground>
