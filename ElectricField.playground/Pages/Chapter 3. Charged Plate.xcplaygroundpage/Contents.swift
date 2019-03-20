@@ -11,63 +11,31 @@ let EFView = ElectricFieldView(frame:frame)
 
 /*:
  - Experiment:
- Start with a positively charged plate at the origin
+ Start with a positively charged plate at the origin and investigate the field. Feel free to adjust it in the way you want.
  */
-//:  - Important: Uncomment only one experiment at a time to prevent any charge overlapping
 
-
-//EFView.E.add(ChargedPlate(charge: 1, position: SCNVector3Zero, length: 5, height: 5))
-////EFView.E.drawVectorField(n: 5)
-//EFView.E.drawFieldLines()
-
+EFView.E.add(ChargedPlate(charge: 1, position: SCNVector3Zero, width: 5, height: 5))
 
 /*:
  - Experiment:
  Now, let's try to investigate the field around an infinitely large plate by using a very very long big plate!
  */
-
-
-//let plate = ChargedPlate(charge: 1000, position: SCNVector3(0,0,0), length: 100, height: 100)
-//EFView.E.add(plate)
-////EFView.E.drawVectorField(n: 5)
-
-
-/*:
- - Important:
-Notice how all vectors despite the distance have the same magnitude! It is very easy to prove mathematically using integration but here we can just see it and I think that it is just amazing!
- */
 /*:
  - Experiment:
- Another very famous configuration is 2 parallel charged plates with equal charges of different signs. It is called a capacitor. Let's see how the electric field surrounding it looks!
+ Very famous configuration is 2 parallel charged plates with equal charges of different signs. It is called a capacitor. Let's see how the electric field surrounding it looks!
 */
-
-
-//EFView.E.add(ChargedPlate(charge: 10, position: SCNVector3(-2,0,0), length: 5, height: 5))
-//EFView.E.add(ChargedPlate(charge: -10, position: SCNVector3(2,0,0), length: 5, height: 5))
-////EFView.E.drawFieldLines()
-//EFView.E.drawVectorField(n: 5)
-
-
 /*:
  - Important:
  Notice how field between 2 plates is almost uniform. That is a basic principle of a capacitor which stores electric energy in this uniform electric field
  */
 /*:
  - Experiment:
- Now, it is time for a capacitor with an infinitely(almost) large plates! Bring it in!
+ Keep the capacitor configuration, but now try moving one plate forward and backwards. Switch to the vector field mode and observe how the field changes.
  */
-
-
-//EFView.E.add(ChargedPlate(charge: 1000, position: SCNVector3(-2,0,0), length: 100, height: 100))
-//EFView.E.add(ChargedPlate(charge: -1000, position: SCNVector3(2,0,0), length: 100, height: 100))
-//EFView.E.drawVectorField(n: 5)
-
-
 /*:
- - Important:
- Notice how between plates we have twice the length of the vectors that we saw with 1 'infinite' plate in the previous example. Also, see how field between plates is very strong, whereas field outside is almost negligible. In fact, in case of an infinite capacitor, the electric field exists only within a capacitor because it exactly cancels out on the outside!
- */
+ - Important: Notice that the closer two plates together, the weaker the field outside the capacitor.
+*/
 PlaygroundPage.current.liveView = EFView
 /*:
- That is basically it. I hope you enjoyed demonstrations and found visual satisfaction in the beautiful peculiar shapes of field lines and arrangement of vectors! I am looking forward to see you on the **WWDC 2018!** If you want to experiment more, proceed to the experiments page -> [Chapter 4. Experiments](Chapter%204.%20Experiments)
+ That is basically it. I hope you enjoyed demonstrations and found visual satisfaction in the beautiful peculiar shapes of field lines and arrangement of vectors! I am looking forward to see you on the **WWDC 2019!** If you want to experiment more, proceed to the experiments page -> [Chapter 4. Experiments](Chapter%204.%20Experiments)
  */
