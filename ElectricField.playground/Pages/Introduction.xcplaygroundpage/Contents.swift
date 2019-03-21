@@ -61,6 +61,10 @@ E.add(pointCharge)
  - Plate
  
  - Important:
+ Red material represents positively charged object.
+ Blue material represents negatively charged object.
+ 
+ - Important:
  By long-pressing the object you can move it within a scene and observe how its position changes the electric field.
  
  If you tap on the charged object, configuration panel will appear. With this panel you can customize object's:

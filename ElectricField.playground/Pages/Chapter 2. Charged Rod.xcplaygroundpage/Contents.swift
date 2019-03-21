@@ -33,5 +33,5 @@ What will happen if we put point charges near the charged rod? Insert Point Char
 
 PlaygroundPage.current.liveView = EFView
 /*:
- Fascinating! Further we will see even more fascinating configurations - charged plates! Proceed to the next chapter -> [Chapter 3. Charged Plate](Chapter%203.%20Charged%20Plate)
+ Fascinating! Further we will see even more fascinating configuration - charged plate! Proceed to the next chapter -> [Chapter 3. Charged Plate](Chapter%203.%20Charged%20Plate)
  */

@@ -15,11 +15,6 @@ let EFView = ElectricFieldView(frame:frame)
  */
 
 EFView.E.add(ChargedPlate(charge: 1, position: SCNVector3Zero, width: 5, height: 5))
-
-/*:
- - Experiment:
- Now, let's try to investigate the field around an infinitely large plate by using a very very long big plate!
- */
 /*:
  - Experiment:
  Very famous configuration is 2 parallel charged plates with equal charges of different signs. It is called a capacitor. Let's see how the electric field surrounding it looks!
@@ -37,5 +32,5 @@ EFView.E.add(ChargedPlate(charge: 1, position: SCNVector3Zero, width: 5, height:
 */
 PlaygroundPage.current.liveView = EFView
 /*:
- That is basically it. I hope you enjoyed demonstrations and found visual satisfaction in the beautiful peculiar shapes of field lines and arrangement of vectors! I am looking forward to see you on the **WWDC 2019!** If you want to experiment more, proceed to the experiments page -> [Chapter 4. Experiments](Chapter%204.%20Experiments)
+ That is basically it. I hope you enjoyed demonstrations and found a visual satisfaction in the beautiful shapes of the field lines and arrangement of vectors! I am looking forward to see you on the **WWDC 2019!** If you want to experiment more, proceed to [Chapter 4. Experiments](Chapter%204.%20Experiments)
  */
