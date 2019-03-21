@@ -31,7 +31,7 @@ open class ElectricFieldView: SCNView {
         let scene = SCNScene()
         self.backgroundColor = .black
         self.allowsCameraControl = true
-//        self.showsStatistics = true
+
         self.autoenablesDefaultLighting = true
     
         E.delegate = self
@@ -145,7 +145,7 @@ open class ElectricFieldView: SCNView {
             
             let unprojectedPoint = self.unprojectPoint(SCNVector3(point.x, point.y, CGFloat(projectedPoint.z)))
             
-            movingNode.position = unprojectedPoint
+            movingNode?.position = unprojectedPoint
 
             i += 1
             
@@ -161,8 +161,8 @@ open class ElectricFieldView: SCNView {
             
             if visualizationType == .fieldLines {
                 
-                self.selectedNode.position = self.ghostNode.position
-                self.selectedNode.transform = self.ghostNode.transform
+                self.selectedNode?.position = self.ghostNode.position
+                self.selectedNode?.transform = self.ghostNode.transform
                 
                 self.ghostNode?.removeFromParentNode()
                 self.ghostNode = nil
