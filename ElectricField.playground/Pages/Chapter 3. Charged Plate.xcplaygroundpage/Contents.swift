@@ -1,12 +1,12 @@
 /*:
  ## Chapter 3. Charged Plate
  
- Similar to chared rod, chared plate is plate with a uniform charge distribution. Close to the plate electric field is almost uniform, meaning it doesn't depend on the distance from the plate and stays the same. The bigger the plate, the greater the distance until which electric field is uniform. In fact, electric field above and below infinite charged plate is uniform at any point!
+ Similar to charged rod, chared plate is plate with a uniform charge distribution. Close to the plate electric field is almost uniform, meaning it doesn't depend on the distance from the plate and stays the same. The bigger the plate, the greater the distance until which electric field is uniform. In fact, electric field above and below infinite charged plate is uniform at any point!
  */
 import PlaygroundSupport
 import SceneKit
 
-let frame = CGRect(x: 0, y: 0, width: 600, height: 600)
+let frame = CGRect(x: 0, y: 0, width: 700, height: 600)
 let EFView = ElectricFieldView(frame:frame)
 
 /*:

@@ -17,7 +17,7 @@ public class ChargedNode: SCNNode {
             }
             
             self.updateMaterial()
-            
+    
         }
         
     }
@@ -64,7 +64,7 @@ public class PointCharge: ChargedNode {
     public init(charge: Float, position: SCNVector3) {
         
         let r: CGFloat = 0.25
-        let radius: Float = 0.1
+        let radius: Float = 0.5
         let sphere = SCNSphere(radius: r)
         
         super.init(charge: charge, position: position, geometry: sphere)

@@ -81,15 +81,6 @@ public extension SCNVector3 {
 
     }
     
-    func toColor() -> UIColor? {
-        
-        let f = self.length() / 0.15
-        
-        let color = UIColor.colorFromFloat(start: UIColor.Theme.startColor, end: UIColor.Theme.endColor, f: CGFloat(f))
-        return color
-        
-    }
-    
 }
 
 public extension Float {
@@ -190,55 +181,7 @@ public extension SCNNode {
         self.eulerAngles = SCNVector3(teta, fi, 0)
         
     }
-    
-    func setColor(from E: SCNVector3) {
-     
-        let f = E.length() / 0.15
-       
-        let color = UIColor.colorFromFloat(start: UIColor.blue, end: UIColor.red, f: CGFloat(f))
         
-        self.geometry?.firstMaterial?.diffuse.contents = color
-        
-    }
-    
-    public static func Vector(length: CGFloat = 0.2) -> SCNNode {
-        
-        let parentNode = SCNNode()
-        
-        let cone: SCNCone = SCNCone(topRadius: 0, bottomRadius: 0.05, height: 0.15)
-        cone.radialSegmentCount = 3
-        let coneNode = SCNNode()
-        coneNode.geometry = cone
-        coneNode.position = SCNVector3(0, length + 0.075, 0)
-        parentNode.addChildNode(coneNode)
-        
-        let cylinder: SCNCylinder = SCNCylinder(radius: 0.025, height: length)
-        cylinder.radialSegmentCount = 3
-        let cylinderNode = SCNNode()
-        cylinderNode.geometry = cylinder
-        cylinderNode.position = SCNVector3(0, length / 2, 0)
-        parentNode.addChildNode(cylinderNode)
-        
-        return parentNode.flattenedClone()
-        
-    }
-    
-    public static func LineSegment(_ color: UIColor, length: CGFloat = 0.2) -> SCNNode {
-        
-        let material = SCNMaterial()
-        material.diffuse.contents = color
-        
-        let cylinder: SCNCylinder = SCNCylinder(radius: 0.025, height: length)
-        cylinder.radialSegmentCount = 3
-        cylinder.firstMaterial = material
-        
-        let cylinderNode = SCNNode()
-        cylinderNode.geometry = cylinder
-        
-        return cylinderNode
-        
-    }
-    
 }
 
 

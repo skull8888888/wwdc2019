@@ -3,8 +3,7 @@
  ## Chapter 2. Charged Rod
  
  Charged rod is simply a rod with a charge that is uniformly distributed along it.
- 
- In textbooks students often face electrostatics problems that involve charged rods and are asked to calculute field around it. So, it would be helpful to give visual insight on what electric field around charged rod looks like in 3d space.
+
 */
 import PlaygroundSupport
 import SceneKit

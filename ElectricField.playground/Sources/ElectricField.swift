@@ -27,12 +27,12 @@ public class ElectricField: SCNNode {
     public override init() {
         super.init()
         
-        for i in 0...9 {
+        for i in 0...10 {
             
             let key = Float(i) / 10.0
             
             if let color = UIColor.colorFromFloat(start: UIColor.Theme.startColor, end: UIColor.Theme.endColor, f: CGFloat(key)) {
-              
+                
                 let vectorNode = SCNVector3.vectorNode(color, length: vectorNodeStandardLength)
                 let cylinderNode = SCNVector3.cylinderNode(color, length: cylinderNodeStandardLength)
 
@@ -134,7 +134,7 @@ public class ElectricField: SCNNode {
                 let x = E.length()
                 let p = x / (1 + abs(x))
                 let key = round(p * 10) / 10
-                
+
                 if let colorFragment = colorFragments[key] {
                     
                     let cylinderNode = colorFragment.cylinderNode.clone()
@@ -144,7 +144,7 @@ public class ElectricField: SCNNode {
                     colorFragment.heavyNode.addChildNode(cylinderNode)
                     
                 }
-                
+            
                 currentPoint = currentPoint + deltaVector
                 
                 if isCloseToCharges(currentPoint, range: 0.1) {
@@ -202,7 +202,7 @@ extension ElectricField {
     
     func updateColorFragments(){
         
-        for i in 0...9 {
+        for i in 0...10 {
             
             let key = Float(i) / 10.0
             
@@ -262,7 +262,7 @@ extension ElectricField {
             let qPosition = SCNVector3(q.x, q.y, q.z)
             
             let diff = (point - qPosition).length()
-            
+
             if diff <= range {
                 return true
             }

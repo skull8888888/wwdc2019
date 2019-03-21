@@ -31,7 +31,7 @@ open class ElectricFieldView: SCNView {
         let scene = SCNScene()
         self.backgroundColor = .black
         self.allowsCameraControl = true
-        self.showsStatistics = true
+//        self.showsStatistics = true
         self.autoenablesDefaultLighting = true
     
         E.delegate = self

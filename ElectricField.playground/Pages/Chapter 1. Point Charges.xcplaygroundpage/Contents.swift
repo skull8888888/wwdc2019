@@ -1,7 +1,7 @@
 /*:
  ## Chapter 1. Point Charges
  
- The name point charge speaks for itself - it is a charge concentrated at a single point. Here point charge is represented with a small sphere.
+ The name "point charge" speaks for itself - it is a charge concentrated at a single point. Point charge is represented with a small sphere.
 */
 
 import PlaygroundSupport
@@ -22,7 +22,7 @@ EFView.E.add(PointCharge(charge: 1, position: SCNVector3Zero))
  */
 /*:
  - Experiment:
- Let's have a look at a configuration known as a *dipole*. Using Panel on the left insert one positive point charge and one negative point charge.
+ Let's have a look at a configuration known as a *dipole*. Using Panel on the left, insert one positive point charge and one negative point charge.
  */
 /*:
  - Experiment:
@@ -30,10 +30,10 @@ EFView.E.add(PointCharge(charge: 1, position: SCNVector3Zero))
  */
 /*:
  - Experiment:
- Feel free to experiment with different configuration of charges of different signs and mangitudes
+ Feel free to experiment with different configuration of charges of different signs and magnitudes
  */
 PlaygroundPage.current.liveView = EFView
 /*:
- Points charges are very interesting, but let's go futher and explore electric fields around uniformly charged objects. We will start with a charged rod -> [Chapter 2. Charged Rod](Chapter%202.%20Charged%20Rod)
+ Point charges are very interesting, but let's go futher and explore electric fields around uniformly charged objects. We will start with a charged rod -> [Chapter 2. Charged Rod](Chapter%202.%20Charged%20Rod)
  */
 
