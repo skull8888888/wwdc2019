@@ -1,3 +1,3 @@
 # electricField
 
-Project accepted fro WWDC 2019 Scholarship 
+Project accepted for WWDC 2019 Scholarship 
